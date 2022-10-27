@@ -1,0 +1,35 @@
+.hero_section{
+    width: 100%;
+    padding: 0 8rem;
+}
+
+.hero_wrapper{
+    margin-top: 9rem;
+    max-width: 36rem;
+}
+
+.hero_wrapper h1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 145%;
+    color: #333856;
+    max-width: 30rem;
+}
+
+.hero_wrapper h1 span{
+    color: #2779F6;
+    background: #E7F1FE;
+    text-decoration: underline;
+}
+
+.hero_wrapper p{
+    font-size: 1.1rem;
+    line-height: 165%;
+    color: #4A4B50;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+.hero_wrapper .hero_wrapper--button{
+    margin-top: 3.5rem;
+}

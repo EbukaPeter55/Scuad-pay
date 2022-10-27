@@ -1,0 +1,35 @@
+.setup_line{
+    max-width: 1200px;
+    margin: 5rem auto 0 auto;
+    color: #8F9092;
+}
+
+.image_wrapper{
+    width: 7%;
+}
+
+.setup{
+    margin-top: 3rem;
+}
+
+.setup_content{
+    max-width: 19rem;
+}
+
+.setup_content h5{
+    font-size: 1.1rem;
+    line-height: 140%;
+    color: #8F9092;
+    font-weight: 500;
+}
+
+.setup_content h5 span{
+    font-weight: 600;
+    color: #000;
+}
+
+.setup_container p{
+    color: #8F9092;
+    font-weight: 500;
+    margin-top: 3rem;
+}
