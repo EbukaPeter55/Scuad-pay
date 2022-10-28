@@ -1,0 +1,54 @@
+.opportunity{
+    margin-top: 19rem;
+}
+
+.opportunity_image{
+    width: 32%;
+}
+
+.opportunity_image img{
+    border-radius: 10px;
+}
+
+.right_wrapper{
+    max-width: 30rem;
+}
+
+.right_wrapper h6{
+    color: #E49969;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    background: #FDF4E7;
+    max-width: 17%;
+}
+
+.right_wrapper h3{
+    font-weight: bold;
+    font-size: 2.1rem;
+    margin-top: 2rem;
+    color: #333856;
+}
+
+.right_wrapper p{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+
+/* RESPONSIVE STYLE */
+@media(max-width: 414px){
+.opportunity_image{
+    width: 100%;
+}
+
+.right_wrapper{
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.right_wrapper h3{
+    max-width: 100%!important;
+}
+
+}
