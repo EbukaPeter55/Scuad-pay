@@ -1,69 +1,66 @@
 import React from 'react';
 import './NavBar.styles.css';
-import Container from 'react-bootstrap/Container';
 
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Link } from 'react-router-dom';
+
 // import NavDropdown from 'react-bootstrap/NavDropdown';
 
 
 const NavBar = () =>{
 
     return (
-        <Navbar bg="light" expand="lg">
-        <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
-            >
-              {/* <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Something else here
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link> */}
-            </Nav>
+      <div>
 
-            {/* <Form className="d-flex">
-              <Form.Control
-                type="search"
-                placeholder="Search"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Search</Button>
-            </Form> */}
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
-              navbarScroll
-            >
-            <Nav.Link href="#action1">Products</Nav.Link>
-            <Nav.Link href="#action1">Pricing</Nav.Link>
-            <Nav.Link href="#action1">Support</Nav.Link>
-            <Nav.Link href="#action1">Documentation</Nav.Link>
-            <Nav.Link href="#action1">Login</Nav.Link>
-            <Nav.Link href="#action1">Create Account</Nav.Link>
+        <nav className="navbar navbar-expand-lg navbar-light mask-custom shadow-0" id="navMain">
+          <div className="container-fluid">
+          
+            <button className="navbar-toggler hamburger-icon hamburger-mobile" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation" >
+                <i className="fas fa-bars"></i>
+            </button>
 
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <div className="collapse navbar-collapse right-nav" id="navbarSupportedContent">
+                <ul className="navbar-nav me-auto nav-links-a">
+                    <li className="nav-item px-3">
+                        <Link to="#" className="nav-link archware-nav-title" >Products</Link>
+                    </li>
 
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+                    <li className="nav-item px-3">
+                        <Link to="#" className="nav-link archware-nav-title">Pricing</Link>
+                    </li>
+
+                    <li className="nav-item px-3">
+                        <Link to="#" className="nav-link archware-nav-title">Support</Link>
+                    </li>
+
+                    <li className="nav-item px-3">
+                        <Link to="#" className="nav-link archware-nav-title">Documentation</Link>
+                    </li>
+                  
+                    <li className="nav-item px-3">
+                        <Link to="#" className="nav-link archware-nav-title">Login</Link>
+                    </li>
+
+                    <li className="nav-item px-3">
+                        <Link to="#" className="nav-link archware-nav-title">Create Account</Link>
+                    </li>
+
+                    {/* <li className="button-wrapper">
+                        <a>
+                            <button type="button" className="buy-button">
+                                Get In Touch
+                            </button>
+                        </a>
+                    </li> */}
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <hr className="nav_line"></hr>
+      </div>
+
     )
 }
 

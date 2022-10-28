@@ -1,0 +1,75 @@
+.features{
+    margin-top: 19rem;
+}
+
+/* LEFT */
+.learn_more p{
+    color: #2779F6;
+    font-size: 1.2rem;
+    text-decoration: underline;
+}
+
+.learn_more--image{
+    width: 2.5%;
+    margin-left: .8rem;
+}
+
+.features_left{
+
+}
+
+.features_left header h6{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #5245DF;
+    /* background: #988FEB; */
+    /* background: #988FEB; */
+    text-decoration: underline;
+}
+
+.features_left header h5{
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    color: #333856;
+}
+
+.make_payment {
+    max-width: 30rem;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    color: #444863;
+}
+
+/* RIGHT STYLE */
+.right_card{
+    width: 30%;
+    min-height: 15rem;
+    border-radius: 20px!important;
+    position: relative;
+    padding-top: 5.5%;
+    border: 3.5px solid #F0F0F0!important;
+}
+
+.right_card .right_card--content{
+    position: absolute;
+
+}
+.card_content{
+    /* margin-top: 1rem;
+    margin-bottom: 1rem; */
+}
+
+.top_line{
+    padding-top: -1rem;
+}
+
+.bottom_line{
+    padding-bottom: -1rem;
+}
+
+.card_content a {
+    color: #56698B;
+    font-weight: 500;
+}
