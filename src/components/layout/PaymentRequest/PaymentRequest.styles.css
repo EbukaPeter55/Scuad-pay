@@ -73,3 +73,16 @@
     color: #56698B;
     font-weight: 500;
 }
+
+/* RESPONSIVE STYLE */
+@media(max-width: 414px){
+    .features{
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    }
+
+    .right_card{
+        width: 100%;
+    }
+}

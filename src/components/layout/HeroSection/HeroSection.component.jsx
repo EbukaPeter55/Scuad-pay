@@ -5,7 +5,9 @@ import './HeroSection.styles.css';
 const HeroSection = () => {
 
     return (
-        <section className='hero_section'>
+        <div >
+        <hr className="nav_line"></hr>
+         <section className='hero_section'>
             <div className='hero_wrapper'>
             <h1>A faster & easier way to receive
                 <span> payments</span> online.</h1>
@@ -15,6 +17,7 @@ const HeroSection = () => {
             </p>
             <div className='hero_wrapper--button'>
             <Button
+            className="mobile_style"
             type="button"
             buttonText="Create an Account"
             background = "#30A658"
@@ -25,7 +28,9 @@ const HeroSection = () => {
             </div>
             </div>
 
-        </section>
+         </section>
+
+        </div>
     )
 }
 

@@ -3,3 +3,9 @@
     font-size: .875rem;
     border-radius: 5px;
 }
+
+@media(max-width: 414px){
+    /* .reusable_button{
+        padding: 5rem 1.6rem;
+    } */
+}

@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const PaymentRequest = () =>{
 
     return (
-        <section className="features container-fluid d-flex flex-row justify-content-evenly align-items-center">
+        <section className="features container-fluid d-flex flex-row flex-wrap justify-content-evenly align-items-center">
             {/* Left */}
             <div className="features_left">
                 <header>

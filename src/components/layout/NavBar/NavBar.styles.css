@@ -1,4 +1,11 @@
-/* Nav text Start*/
+/* Nav stylest*/
+.nav_content{
+    margin-right: 12%;
+}
+
+.navDrop_logo{
+    width: 15%;
+}
 nav{
     padding: 1rem 0!important;
 }
@@ -11,8 +18,8 @@ nav{
 .archware-nav-title{
     color: #5A5E76!important;
     font-style: normal;
-    font-weight: 520!important;
-    font-size: .875rem;
+    font-weight: 505!important;
+    font-size: 1rem;
     line-height: 22px;
     position: relative;
 }
@@ -20,43 +27,6 @@ nav{
     font-size: .83rem!important;
 }
 
-nav .buy-button{
-    /* width: 131.08px; */
-    padding: .875rem 1.5rem;
-    height: auto;
-    background: #F56B08;
-    border-radius: 25px;
-    border: none;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.75rem;
-    line-height: 18px;
-    color: #FFFFFF;
-
-}
-nav button[type="button"]{
-    margin-right: 2rem;
-}
-
-.right-nav{
-    margin-left: 41%;
-    margin-top: 1rem;
-}
-
-.button-wrapper{
-    margin-left: 1.5rem;
-}
-
-/* Hide the light logo by default */
-.light-logo{
-    display: none;
-}
-
-/* Color of the navbar AFTER scroll */
-.navbar-scroll,
-.navbar-scrolled {
-  background-color: #bbb1cb;
-}
 
 .navbar-trigger{
     background: #FFFFFF;
@@ -110,11 +80,6 @@ ul li a:nth-child(2) {
     margin-left: -1em;
 }
 
-.nav_line{
-    max-width: 1200px;
-    margin: 0 auto 0 auto;
-    color: #8F9092;
-}
 @media (max-width: 1200px) {
    
 }

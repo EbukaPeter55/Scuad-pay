@@ -1,64 +1,49 @@
 import React from 'react';
 import './NavBar.styles.css';
 
-import { Link } from 'react-router-dom';
-
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import nigeria from '../../../assets/images/nigeria.png';
 
 const NavBar = () =>{
 
     return (
       <div>
+        <Navbar bg="white" expand="lg">
+        <Container fluid>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+          </Nav>
+          <Nav className='nav_content'>
+          <Nav.Link className='archware-nav-title' href="#">Products</Nav.Link>
+          <Nav.Link className='archware-nav-title' href="#">Pricing</Nav.Link>
+          <Nav.Link className='archware-nav-title' href="#">Support</Nav.Link>
+          <Nav.Link className='archware-nav-title' href="#">Documentation</Nav.Link>
+          <Nav.Link className='archware-nav-title' href="#">Login</Nav.Link>
+          <Nav.Link className='archware-nav-title' href="#">Create Account</Nav.Link>
 
-        <nav className="navbar navbar-expand-lg navbar-light mask-custom shadow-0" id="navMain">
-          <div className="container-fluid">
-          
-            <button className="navbar-toggler hamburger-icon hamburger-mobile" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation" >
-                <i className="fas fa-bars"></i>
-            </button>
+          <NavDropdown className='archware-nav-title' title="Ghana" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#">
+                <img className='img-fluid navDrop_logo' src={nigeria} alt="nigeria logo"/> Nigeria
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#">
+                Senegal
+              </NavDropdown.Item>
+            </NavDropdown>
 
-            <div className="collapse navbar-collapse right-nav" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto nav-links-a">
-                    <li className="nav-item px-3">
-                        <Link to="#" className="nav-link archware-nav-title" >Products</Link>
-                    </li>
-
-                    <li className="nav-item px-3">
-                        <Link to="#" className="nav-link archware-nav-title">Pricing</Link>
-                    </li>
-
-                    <li className="nav-item px-3">
-                        <Link to="#" className="nav-link archware-nav-title">Support</Link>
-                    </li>
-
-                    <li className="nav-item px-3">
-                        <Link to="#" className="nav-link archware-nav-title">Documentation</Link>
-                    </li>
-                  
-                    <li className="nav-item px-3">
-                        <Link to="#" className="nav-link archware-nav-title">Login</Link>
-                    </li>
-
-                    <li className="nav-item px-3">
-                        <Link to="#" className="nav-link archware-nav-title">Create Account</Link>
-                    </li>
-
-                    {/* <li className="button-wrapper">
-                        <a>
-                            <button type="button" className="buy-button">
-                                Get In Touch
-                            </button>
-                        </a>
-                    </li> */}
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <hr className="nav_line"></hr>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+        
       </div>
 
     )

@@ -1,3 +1,9 @@
+.nav_line{
+    max-width: 1150px;
+    margin: 0 auto 0 auto;
+    color: #8F9092;
+}
+
 .hero_section{
     width: 100%;
     padding: 0 8rem;
@@ -32,4 +38,27 @@
 
 .hero_wrapper .hero_wrapper--button{
     margin-top: 3.5rem;
+}
+
+/* RESPONSIVE STYLE */
+@media(max-width: 414px){
+    .hero_section{
+        padding: 0 2rem;
+    }
+
+    .hero_wrapper{
+        width: 100%
+    } 
+
+    .hero_wrapper h1{
+        width: 100%;
+        font-size: 2.5rem!important;
+    }
+
+    .hero_wrapper p{
+        font-size: 1rem;
+    }
+    .reusable_button{
+        padding: .8rem 1.3rem!important;
+    }
 }
